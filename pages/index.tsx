@@ -8,6 +8,8 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { IconCloud } from "@/types/utils";
+import { Button } from "@nextui-org/button";
+import { CoolMode } from "@/types/utils/magic";
 
 export default function IndexPage() {
   const slugs = [
@@ -57,6 +59,9 @@ export default function IndexPage() {
             Beautiful, fast and modern React UI library.
           </div>
         </div>
+        <CoolMode>
+        <Button>Buy me a coffee!!!</Button>
+      </CoolMode>
 
         <div className="flex gap-3">
           <Link
