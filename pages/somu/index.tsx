@@ -1,9 +1,9 @@
 import React from "react";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, User, Chip, Tooltip, ChipProps, getKeyValue} from "@nextui-org/react";
-import {EditIcon} from "./EditIcon";
-import {DeleteIcon} from "./DeleteIcon";
-import {EyeIcon} from "./EyeIcon";
-import {columns, users} from "./data";
+import {EditIcon} from "../../types/EditIcon";
+import {DeleteIcon} from "../../types/DeleteIcon";
+import {EyeIcon} from "../../types/EyeIcon";
+import {columns, users} from "../../types/data";
 import DefaultLayout from "@/layouts/default";
 
 const statusColorMap: Record<string, ChipProps["color"]>  = {
@@ -14,7 +14,7 @@ const statusColorMap: Record<string, ChipProps["color"]>  = {
 
 type User = typeof users[0];
 
-export default function App() {
+const somu = () => {
   const renderCell = React.useCallback((user: User, columnKey: React.Key) => {
     const cellValue = user[columnKey as keyof User];
 
@@ -88,3 +88,5 @@ export default function App() {
     </DefaultLayout>
   );
 }
+
+export default somu;

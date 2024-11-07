@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
-import { IconCloud } from "./utils";
+import { IconCloud } from "@/types/utils";
 
 export default function IndexPage() {
   const slugs = [
