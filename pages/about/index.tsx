@@ -1,4 +1,4 @@
-import { title } from "@/components/primitives";
+
 import DefaultLayout from "@/layouts/default";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
